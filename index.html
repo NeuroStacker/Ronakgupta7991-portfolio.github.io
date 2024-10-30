@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ronak Gupta's Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #f9fafb;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background: linear-gradient(to right, #4f46e5, #7c3aed);
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        header h2 {
+            font-size: 1.2rem;
+            font-weight: 300;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        section {
+            padding: 3rem 0;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        section h3 {
+            color: #4f46e5;
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .dark-section {
+            background-color: #1f2937;
+            color: white;
+        }
+
+        .dark-section h3 {
+            color: #a78bfa;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .skill-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.75rem;
+        }
+
+        .skill-dot {
+            width: 8px;
+            height: 8px;
+            background-color: #a78bfa;
+            border-radius: 50%;
+            margin-right: 1rem;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .project-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .project-card h4 {
+            color: #4f46e5;
+            margin-bottom: 1rem;
+            font-size: 1.25rem;
+        }
+
+        .certifications li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.75rem;
+            list-style: none;
+        }
+
+        footer {
+            background-color: #1f2937;
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+        }
+
+        footer h3 {
+            color: #a78bfa;
+            margin-bottom: 1.5rem;
+        }
+
+        footer a {
+            color: #a78bfa;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            header h2 {
+                font-size: 1rem;
+            }
+
+            .container {
+                width: 95%;
+                padding: 0 10px;
+            }
+
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Ronak Gupta</h1>
+            <h2>Aspiring Computer Science & Engineering Professional | Innovator | AI & Machine Learning Enthusiast</h2>
+        </div>
+    </header>
+
+    <section>
+        <div class="container">
+            <h3>About Me</h3>
+            <p>I am a second-year Computer Science and Engineering student with a passion for developing innovative solutions 
+                and mastering my field. I have hands-on experience in several programming languages (C, C++, Python, Java) 
+                and a growing interest in machine learning and AI. I'm driven by curiosity and a desire to create impactful 
+                technology, as shown through projects such as web applications to combat air pollution and lab assistant software.</p>
+        </div>
+    </section>
+
+    <section class="dark-section">
+        <div class="container">
+            <h3>Skills</h3>
+            <div class="skills-grid">
+                <div>
+                    <div class="skill-item">
+                        <span class="skill-dot"></span>
+                        Programming Languages: C, C++, Python, Java
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-dot"></span>
+                        Web Development: MERN stack, Bootstrap, Tailwind, Firebase
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-dot"></span>
+                        Machine Learning: Basic knowledge, actively expanding
+                    </div>
+                </div>
+                <div>
+                    <div class="skill-item">
+                        <span class="skill-dot"></span>
+                        App Development: Java for Android, Kotlin
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-dot"></span>
+                        Software Tools: Java Swing, Git, Firebase, OpenCV
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-dot"></span>
+                        Other Skills: Problem-solving, debugging, UI design
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h3>Projects</h3>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h4>Face Recognition Attendance System</h4>
+                    <p>Developed an automated attendance system using facial recognition technology. The system captures, 
+                        processes, and records attendance in real-time, improving efficiency and reducing manual effort.</p>
+                    <p><strong>Technology Used:</strong> Python, OpenCV, Face Recognition Libraries</p>
+                </div>
+                <div class="project-card">
+                    <h4>Crop Residue Solution Web App</h4>
+                    <p>A web platform created to educate farmers on air pollution impacts, link them with bio-pellet plants, 
+                        and streamline crop residue sales and distribution.</p>
+                    <p><strong>Technology Stack:</strong> MERN stack, Firebase, Python</p>
+                </div>
+                <div class="project-card">
+                    <h4>Lab Assistant Software</h4>
+                    <p>A desktop application that accesses and analyzes blood test results, recognizing patterns 
+                        and potential disease markers based on blood parameters.</p>
+                    <p><strong>Technology Used:</strong> Java Swing, Java</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h3>Certifications & Learning</h3>
+            <ul class="certifications">
+                <li>
+                    <span class="skill-dot"></span>
+                    Machine Learning Course on Coursera: Expanding my ML skills.
+                </li>
+                <li>
+                    <span class="skill-dot"></span>
+                    Kotlin Programming: Currently learning Kotlin for Android development.
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h3>Interests</h3>
+            <p>I enjoy building Android applications and am currently exploring Kotlin. I'm interested in projects 
+                that push the limits of current technology and offer practical solutions, from smart automation 
+                to AI-driven user experiences.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <h3>Contact</h3>
+            <div class="contact-info">
+                <p>Email: ronakgupta730@gmail.com</p>
+                <p><a href="#">LinkedIn Profile</a></p>
+                <p><a href="#">GitHub Profile</a></p>
+                <p><a href="#">Portfolio Site</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
